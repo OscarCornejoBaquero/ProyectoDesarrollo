@@ -4,13 +4,36 @@
     {
         return BASE_URL;
     }
-    function dep($data)
-    {
-        $format = print_r('<pre>');
-        $format .= print_r($data);
-        $format .= print_r('</pre>');
-        return $format;
-    }
+
+//Retorna la url del Assets
+function media(){
+    return BASE_URL."Assets/";
+}
+function headerAdmin($data=""){
+    $view_header ="Views/Templates/header.php";
+    require_once($view_header);
+}
+function headerFront($data=""){
+    $view_header ="Views/Templates_frontEnd/header.php";
+    require_once($view_header);
+}
+function footerAdmin($data=""){
+    $view_footer = "Views/Templates/footer.php";
+    require_once($view_footer);
+}
+//Muestra la informacion en un formato
+function dep($data)
+{
+    $format = print_r('<pre>');
+    $format .= print_r($data);
+    $format .= print_r('</pre>');
+    return $format;
+}
+
+function getModal(string $nameModal, $data){
+    $view_modal = "Views/Template/Modals/{$nameModal}.php";
+    require_once $view_modal;
+}
 
     //Copiar funcion de eliminar espacios despues 
 
@@ -28,15 +51,7 @@
         }
         return $pass;
     }
-    //generar token
-    function token()
-    {
-        $r1 = bin2hex(random_bytes(10));
-        $r2 = bin2hex(random_bytes(10));
-        $r3 = bin2hex(random_bytes(10));
-        $r4 = bin2hex(random_bytes(10));
-        return $r1.'-'.$r2.'-'.$r3.'-'.$r4;
-    }
+
     //Formato para valores monetarios 
     function formatMoney($cantidad)
     {
