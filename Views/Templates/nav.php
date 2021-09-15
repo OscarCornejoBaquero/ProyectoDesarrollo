@@ -1,51 +1,60 @@
-<nav class="navbar navbar-expand-sm   navbar-light bg-light">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="<?=media()?>img/logo.png" alt="logo empresa" style="width: 7rem;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link linkColor" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link linkColor" aria-current="page" href="#">Nosotros</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle linkColor" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item linkColor" href="#">Mix de Bocaditos</a></li>
+                            <li><a class="dropdown-item linkColor" href="#">Dulce</a></li>
+                            <li><a class="dropdown-item linkColor" href="#">Sal</a></li>
 
-    <div class="collapse navbar-collapse container-fluid" id="navbarTogglerDemo03">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item dropdown dmenu">
-                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                    Our Service
-                </a>
-                <div class="dropdown-menu sm-menu">
-                    <a class="dropdown-item" href="#">service2</a>
-                    <a class="dropdown-item" href="#">service 2</a>
-                    <a class="dropdown-item" href="#">service 3</a>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle linkColor" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Tematicas y Eventos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item linkColor" href="#">Todas las Tematicas</a></li>
+                            <li><a class="dropdown-item linkColor" href="#">Baby Shower</a></li>
+                            <li><a class="dropdown-item linkColor" href="#">Bautizo y Primera Comunión</a></li>
+                            <li><a class="dropdown-item linkColor" href="#">Cumpleaños</a></li>
+                            <li><a class="dropdown-item linkColor" href="#">Graduación</a></li>
+                            <li><a class="dropdown-item linkColor" href="#">Infantil</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link linkColor"aria-current="page" href="#" >Contactenos</a>
+                    </li>
+                    <!--Ocultar si no es admin -->
+                    <li class="nav-item">
+                        <a class="nav-link linkColor"aria-current="page" href="#" >Administración Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link linkColor "aria-current="page" href="#" >Ventas</a>
+                    </li>
+                    <!--Ocultar si no es admin -->
+                </ul>
+                <div class="d-flex">
+                    <a class="login linkColor" href="">Iniciar Sesión <i class="fas fa-user iconoLogin" ></i></a>
                 </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Call</a>
-            </li>
-            <!-- <li class="nav-item dropdown dmenu">
-             <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-               Dropdown link
-             </a>
-             <div class="dropdown-menu sm-menu">
-               <a class="dropdown-item" href="#">Link 1</a>
-               <a class="dropdown-item" href="#">Link 2</a>
-               <a class="dropdown-item" href="#">Link 3</a>
-               <a class="dropdown-item" href="#">Link 4</a>
-               <a class="dropdown-item" href="#">Link 5</a>
-               <a class="dropdown-item" href="#">Link 6</a>
-             </div>
-           </li> -->
-        </ul>
-        <div class="social-part d-flex">
-            <i class="fab fa-facebook"aria-hidden="true"></i>
-            <i class="fab fa-twitter" aria-hidden="true"></i>
-            <i class="fab fa-instagram" aria-hidden="true"></i>
+               
+            </div>
         </div>
-    </div>
-</nav>
-<h1 class="prueba">asa</h1>
+    </nav>
+</div>
+

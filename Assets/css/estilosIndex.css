@@ -1,0 +1,200 @@
+.boton-amarillo {
+    background-color: #EA899A;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    text-align: center;
+    margin-top: 2.5rem;
+    display: inline-block;
+    border: none;
+}
+
+.boton-amarillo:hover{
+    cursor: pointer;
+}
+.imagen-contacto {
+    background-position: center center;
+    background-size: cover;
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imagen-contacto h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #1e2125;
+}
+.imagen-contacto p {
+    font-size: 1.8rem;
+    font-weight: revert;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.blog h3, .testimoniales h3{
+    text-align: center;
+    font-weight: normal;
+}
+
+.testimonial {
+    background-color: #dfc2c4;
+    font-size: 1.25rem;
+    padding: 2rem;
+    color: black;
+    border-radius: 2rem;
+}
+@media (max-width: 768px) {
+    .testimonial {
+
+        font-size: 0.75rem;
+
+    }
+    blockquote {
+        padding-left: 1rem;
+        position: relative;
+    }
+    blockquote:before {
+
+        width: 3rem;
+        height: 4rem;
+        display: block;
+        position: absolute;
+        left: -2rem;
+    }
+    .entrada-blog {
+        display: block;
+        grid-template-columns: 1fr 2fr;
+        -moz-column-gap: 2rem;
+        column-gap: 2rem;
+    }
+    .seccion-inferior {
+        display: block!important;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 2rem;
+    }
+    .imagen-contacto h2 {
+        font-size: 3rem;
+        text-align: center;
+    }
+    .imagen-contacto p {
+        font-size: 1.2rem;
+        text-align: justify;
+        color: white;
+
+    }
+}
+
+
+
+    blockquote {
+    padding-left: 2rem;
+    position: relative;
+}
+
+
+.seccion {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+.seccion-inferior {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 2rem;
+}
+.informacion-meta span{
+    color: yellow;
+
+}
+
+.entrada-blog {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    -moz-column-gap: 2rem;
+    column-gap: 2rem;
+}
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.texto-entrada a {
+    text-decoration: none;
+    color: black;
+    margin-top: 2rem;
+    display: block;
+}
+.texto-entrada a p{
+    color: #000;
+    font-size: 1rem;
+    text-decoration: none;
+}
+.texto-entrada h4 {
+    margin: 0;
+    line-height: 1.4;
+}
+.texto-entrada h4:after {
+     content: '';
+     display: block;
+     width: 15rem;
+     height: .5rem;
+     background-color: #dfc2c4;
+     margin-top: 1rem;
+ }
+img,
+picture {
+    width: 100%;
+    display: block;
+}
+.imagen-contacto2 {
+    background-image:url("../img/fondo2.jpg");
+}
+.imagen-contacto2 {
+    background-position: center center;
+    background-size: cover;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imagen-contacto2 h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #1e2125;
+    text-align: center;
+}
+.imagen-contacto2 p {
+    font-size: 1.8rem;
+    font-weight: revert;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.horarios{
+    width: 15rem;
+    height: 15rem;
+    background-color: white;
+
+}
+.horarios h5{
+
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    font-weight: bold;
+    color: #6a1a21;
+    padding-top: 15%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.horarios p{
+    font-size: 0.75rem;
+    color: black;
+    line-height: 0.50rem;
+
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
