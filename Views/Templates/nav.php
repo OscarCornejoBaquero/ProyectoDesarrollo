@@ -19,7 +19,9 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item linkColor" href="#">Mix de Bocaditos</a></li>
+                            <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item linkColor" href="#">Dulce</a></li>
+                            <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item linkColor" href="#">Sal</a></li>
 
                         </ul>
@@ -29,11 +31,11 @@
                             Tematicas y Eventos
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item linkColor" href="#">Todas las Tematicas</a></li>
-                            <li><a class="dropdown-item linkColor" href="#">Baby Shower</a></li>
-                            <li><a class="dropdown-item linkColor" href="#">Bautizo y Primera Comunión</a></li>
+
                             <li><a class="dropdown-item linkColor" href="#">Cumpleaños</a></li>
+                            <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item linkColor" href="#">Graduación</a></li>
+                            <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item linkColor" href="#">Infantil</a></li>
                         </ul>
                     </li>
@@ -41,9 +43,19 @@
                         <a class="nav-link linkColor"aria-current="page" href="#" >Contactenos</a>
                     </li>
                     <!--Ocultar si no es admin -->
-                    <li class="nav-item">
-                        <a class="nav-link linkColor"aria-current="page" href="#" >Administración Productos</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle linkColor" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Administración
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                            <li><a class="dropdown-item linkColor" href="#">Productos</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item linkColor " href="<?=base_url()?>usuarios">Usuarios</a></li>
+
+                        </ul>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link linkColor "aria-current="page" href="#" >Ventas</a>
                     </li>

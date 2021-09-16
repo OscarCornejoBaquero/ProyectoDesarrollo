@@ -31,7 +31,7 @@ function dep($data)
 }
 
 function getModal(string $nameModal, $data){
-    $view_modal = "Views/Template/Modals/{$nameModal}.php";
+    $view_modal = "Views/Templates/Modals/{$nameModal}.php";
     require_once $view_modal;
 }
 

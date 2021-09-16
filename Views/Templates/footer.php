@@ -1,3 +1,5 @@
+
+
 <footer class="footer" style="padding-top: 2px; border-top: 1px solid #adb5bd;">
     <div class="container">
         <div class="row">
@@ -28,18 +30,16 @@
 </footer>
 
 </div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
 <script type="text/javascript">
-    $(document).ready(function () {
-        $('.navbar-light .dmenu').hover(function () {
-            $(this).find('.sm-menu').first().stop(true, true).slideDown(150);
-        }, function () {
-            $(this).find('.sm-menu').first().stop(true, true).slideUp(105)
-        });
-    });
+    const base_url = "<?= base_url()?>";
 </script>
+
+<script type="text/javascript" src="<?= media();?>js/functions_admin.js"></script>
+
+<!-- Archivo para la ejecucion del archivo de funciones roles-->
+<script src="<?= media(); ?>js/<?= $data['page_functions_js']; ?>"></script>
+<?php
+require_once ("scripts.php");
+?>
 </body>
 </html>

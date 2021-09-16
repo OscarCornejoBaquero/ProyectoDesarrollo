@@ -15,16 +15,11 @@ class Mysql extends Conexion{
     //insertar un registro 
     public function insert(string $query, array $array)
     {
-        //$this->stringquery = $query;
-        //$this->arrayValues = $arrayValues;
-        //Se puede refactorizar este codigo sin problema yeahhh
         $insert = $this->conexion->prepare($query);
         $respuestaInsert = $insert->execute($array);       
         if($respuestaInsert){
             return $this->conexion->lastInsertId();
         }
-
-        
     }
 
     //Consulta de 1 solo registro especifico 
