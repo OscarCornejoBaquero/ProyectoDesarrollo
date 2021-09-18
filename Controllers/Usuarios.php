@@ -6,6 +6,7 @@ class Usuarios extends Controllers
     private ObjetoUsuario $objPersona;
     public function __construct()
     {
+        session_start();
         parent::__construct();
     }
     public function usuarios(){
@@ -33,7 +34,7 @@ class Usuarios extends Controllers
             try {
                 $this->asignarDatos();
                 $this->model->insertUsuario($this->objPersona);
-                $arrResponse = array('status' => true, 'msg' => 'Datos guardados correctamente.');
+                $arrResponse = array('status' => true, 'msg' => 'Datos de usuario guardados correctamente.');
             }catch (Exception $e) {
                 $arrResponse = array("status" => false, "msg" => $e->getMessage());
             }
@@ -83,7 +84,7 @@ class Usuarios extends Controllers
 
                 $this->objPersona->setPass($_POST['txtPassword']);
                 $request_user = $this->model->updateUsuario($this->objPersona);
-                $arrResponse = array('status' => true, 'msg' => 'Datos Actualizados correctamente.');
+                $arrResponse = array('status' => true, 'msg' => 'Datos de Usuario Actualizados correctamente.');
             }catch (Exception $e) {
                 $arrResponse = array("status" => false, "msg" => $e->getMessage());
             }

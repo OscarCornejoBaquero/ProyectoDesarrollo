@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="es">
 <head>
@@ -34,6 +35,69 @@
 <body>
 <div class="headerContenido">
 <header class="site-navbar js-sticky-header site-navbar-target bg-light" role="banner">
-<?php
-require_once ("nav.php");?>
+
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="<?=base_url()?>home"><img src="<?=media()?>img/logo.png" alt="logo empresa" style="width: 7rem;"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <!--Ocultar si no es admin -->
+                        <?php
+                        if ($_SESSION['userData']['nombre_rol'] == "administrador" || $_SESSION['userData']['nombre_rol'] == "vendedor"){
+                            ?>
+                            <li class="nav-item">
+                                <a class="nav-link linkColor"aria-current="page" href="<?=base_url()?>dashboard" >Dashboard</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link linkColor"aria-current="page" href="<?=base_url()?>productos" >Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link linkColor "aria-current="page" href="<?=base_url()?>ventas" >Ventas</a>
+                            </li>
+                        <?php }?>
+                        <?php
+                        if ($_SESSION['userData']['nombre_rol'] == "administrador"){
+                            ?>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle linkColor" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Administración
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item linkColor" href="<?=base_url()?>empresa">Empresa</a></li>
+                                    <li><hr class="dropdown-divider">Usuarios</li>
+                                    <li><a class="dropdown-item linkColor " href="<?=base_url()?>usuarios">Manejo de Usuarios</a></li>
+                                    <li><a class="dropdown-item linkColor" href="<?=base_url()?>roles">Roles</a></li>
+                                    <li><hr class="dropdown-divider">Productos</li>
+                                    <li><a class="dropdown-item linkColor" href="<?=base_url()?>categoria">Categorias</a></li>
+
+                                </ul>
+                            </li>
+                        <?php }?>
+
+                        <!--Ocultar si no es admin -->
+                    </ul>
+                    <div class="d-flex col-md-3">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><?=$_SESSION['userData']['nombres']?> <i class="fas fa-user-circle"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="<?=base_url()?>perfilUsuario">Perfil</a></li>
+                                    <li><a class="dropdown-item" href="<?=base_url()?>CerrarSesion">Cerrar Sesión</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
 </header>

@@ -1,4 +1,4 @@
-<?php headerAdmin($data);?>
+<?php headerFront($data);?>
 
 <div style="padding :1rem">
 </div>

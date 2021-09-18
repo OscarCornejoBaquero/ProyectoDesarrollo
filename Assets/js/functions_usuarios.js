@@ -187,7 +187,9 @@ function fntEditUsuario(idpersona) {
                 document.querySelector("#txtEmail").value = objData.data.correo;
                 document.querySelector('#txtUsuario').value = objData.data.usuario;
                 document.querySelector('#txtPassword').value = objData.data.password;
+
                 document.querySelector("#listRolid").value = objData.data.id_rol;
+
                 $('#listRolid').selectpicker('render');
 
                 if (objData.data.estado == 1) {
@@ -238,7 +240,7 @@ function fntDelUsuario(idpersona) {
                 }
             }
         } else {
-            swal("Atención", "objData.msg", "error");
+            swal("Atención", "Usted a Cancelado la Eliminación", "error");
         }
     });
 }

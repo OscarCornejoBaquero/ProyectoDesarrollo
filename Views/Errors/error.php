@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Error pagina no encontrada </title>
-</head>
-<body>
-    <h1>Pagina no encontrada</h1>
-</body>
-</html>
+<?php
+headerAdmin($data);?>
+    <div class="container container-img" >
+        <img src="<?=media()?>img/error.jpg" alt="Error página no encontrada" style="width: 50%; padding-top: 0rem">
+        <h3>
+            Lo sentimos esta página no esta disponible por el momento
+        </h3>
+    </div>
+
+
+<?php footerAdmin($data);?>

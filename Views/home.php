@@ -1,4 +1,10 @@
-<?php headerAdmin($data);?>
+<?php
+
+headerFront($data);
+
+?>
+
+
 <div style="padding-bottom: 1rem">
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">

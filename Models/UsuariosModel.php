@@ -70,7 +70,7 @@ class UsuariosModel extends Mysql
 
 
     public function selectUsuario(int $idpersona){
-        $sql = "SELECT u.id_usuario, u.nombres, u.apellidos, u.cedula, u.telefono, u.correo, u.usuario, u.password, u.estado,r.nombre_rol 
+        $sql = "SELECT u.id_usuario, u.nombres, u.apellidos, u.cedula, u.telefono, u.correo, u.usuario, u.password, u.estado,r.nombre_rol ,r.id_rol 
                     FROM usuarios u 
                     INNER JOIN rol r 
                     on u.id_rol = r.id_rol 
